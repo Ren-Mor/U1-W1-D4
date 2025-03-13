@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sviluppo di una pagina web - Blog Epicode</title>
+  </head>
+  <body>
+    <header>
+      <img src="assets/img/logo.svg" alt="Epicode-logo" />
+      <h2>Epicode-il blog dei developers</h2>
+
+      <a href="https://epicode.com/it/"
+        ><h3><ion-icon name="arrow-forward-outline"></ion-icon>Home<ion-icon name="arrow-back-outline"></ion-icon></h3
+      ></a>
+      <a href="https://epicode.com/it/f1000-epicode-financial-times-statista/"
+        ><h3><ion-icon name="arrow-forward-outline"></ion-icon>Articoli<ion-icon name="arrow-back-outline"></ion-icon></h3
+      ></a>
+      <a href="https://epicode.com/it/lavora-con-noi/"
+        ><h3><ion-icon name="arrow-forward-outline"></ion-icon>Lavora con noi<ion-icon name="arrow-back-outline"></ion-icon></h3
+      ></a>
+    </header>
+    <main>
+      <div>
+        <h4>Come creare un template per i post.</h4>
+        <h5><ion-icon name="pencil"></ion-icon>A cura di Morelli Renato - <ion-icon name="time"></ion-icon>pubblicato il 11/03/2025</h5>
+      </div>
+      <div>
+        <p>
+          La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le <span class="text-span">parti comuni</span> da applicare a tutte le
+          pagine.
+        </p>
+        <p>Le varie aree saranno quindi suddivise in:</p>
+        <ul>
+          <li>Contenuti di intestazione del tag <span class="list-span">&lt;header&gt;</span></li>
+          <li>Contenuti centrali variabili del tag <span class="list-span">&lt;main&gt;</span>(corpo principale)</li>
+          <li>Contenuti di fine pagina comuni, da inserire nel tag <span class="list-span">&lt;footer&gt;</span></li>
+        </ul>
+        <h4>Formattazione del codice</h4>
+        <p>
+          Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da <span class="text-span">selezionare con i CSS</span>. perciò i passi
+          saranno:
+        </p>
+        <ol>
+          <li>Progettare il markup assegnando ad ogni specifico testo il tag appropriato</li>
+          <li>Scrivere l'HTML dai teg esterni a quelli interni e dall'alto verso il basso</li>
+          <li>Applicare gli stili CSS</li>
+        </ol>
+        <p id="table-header">Diffusione dei CSS</p>
+      </div>
+      <table>
+        <tr>
+          <td class="first-row">Anno</td>
+          <td class="first-row">% <br />di utilizzo</td>
+          <td class="first-row">
+            Supporto <br />
+            browsers
+          </td>
+        </tr>
+        <tr>
+          <td>2000</td>
+          <td>20%</td>
+          <td>17%</td>
+        </tr>
+        <tr>
+          <td class="other-row">2002</td>
+          <td class="other-row">35%</td>
+          <td class="other-row">22%</td>
+        </tr>
+        <tr>
+          <td>2004</td>
+          <td>45%</td>
+          <td>42%</td>
+        </tr>
+        <tr>
+          <td class="other-row">2008</td>
+          <td class="other-row">80%</td>
+          <td class="other-row">51%</td>
+        </tr>
+        <tr>
+          <td>2012</td>
+          <td>100%</td>
+          <td>76%</td>
+        </tr>
+      </table>
+      <p>
+        Un test di validazione potrà essere fatto tramite il <a id="lone-anchor" href="#">tool online</a> dedicato allo scopo. Una volta ottimizzato il tutto,
+        avremo raggiunto il nostro obiettivo ed essere stati dei veri e propri developers come loro:
+      </p>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/sOnsyLAXfSI?si=DmIVLNju6P332DMj"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </main>
+    <footer>
+      <div>
+        <div id="news">
+          <h3>NOVITA'</h3>
+          <p>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</p>
+          <form onsubmit="alert ('Grazie per la tua iscrizione!')">
+            <input type="email" placeholder="indirizzo email" />
+            <button type="submit">Iscriviti</button>
+          </form>
+        </div>
+        <h4>Articoli correlati</h4>
+        <p class="articles">
+          <a href="#">Validare il codice HTML</a> <br />
+          <ion-icon name="pricetag-outline"></ion-icon>Categoria: develop <br />
+          <ion-icon name="calendar-outline"></ion-icon>Data:18/09/2020
+        </p>
+        <p class="articles">
+          <a href="#">Correggere la sintassi</a> <br />
+          <ion-icon name="pricetag-outline"></ion-icon>Categoria: develop <br />
+          <ion-icon name="calendar-outline"></ion-icon>Data:16/09/2020
+        </p>
+        <p class="articles">
+          <a href="#">Meno Kb nella pagina</a> <br />
+          <ion-icon name="pricetag-outline"></ion-icon>Categoria: ottimizzazione <br />
+          <ion-icon name="calendar-outline"></ion-icon>Data:30/09/2020
+        </p>
+        <div id="last-div">
+          <h4>Blog Epicode &copy; 2023</h4>
+          <p>
+            Testata online di Morelli Renato, registrata con prot. n. 213/2018 - Via Luigi Einaudi 2 - P.IVA 00112233. <br /><a id="last-anchor" href="#">
+              >info@epicode.school</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
