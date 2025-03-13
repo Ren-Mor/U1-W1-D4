@@ -30,6 +30,7 @@ main h5 {
 }
 table {
   margin-left: 33%;
+  width: 12em;
 }
 #table-header {
   font-style: italic;
