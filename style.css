@@ -26,6 +26,9 @@ main {
 main h5 {
   color: gainsboro;
 }
+table {
+  margin-left: 33%;
+}
 #table-header {
   font-style: italic;
   font-weight: 600;
