@@ -4,6 +4,7 @@ body {
   text-align: center;
   width: fit-content;
   background-image: url(assets/img/sfondo.png);
+  padding: 1px;
   box-shadow: 20px 20px 50px 15px grey;
 }
 header {
@@ -37,6 +38,7 @@ table {
 .first-row {
   background-color: rgb(48, 116, 210);
   margin: -4px;
+  color: white;
 }
 .other-row {
   background-color: lightgray;
