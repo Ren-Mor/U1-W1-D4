@@ -9,6 +9,7 @@ body {
 }
 header {
   background-image: linear-gradient(360deg, rgb(2, 101, 126), rgb(85, 189, 218));
+  padding: 2rem;
 }
 header img {
   width: 200px;
